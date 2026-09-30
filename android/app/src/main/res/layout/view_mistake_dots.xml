@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/dots_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/dot_one"
+            android:layout_width="@dimen/mistake_dot"
+            android:layout_height="@dimen/mistake_dot"
+            android:layout_marginEnd="@dimen/space_xxs"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_dot_empty" />
+
+        <ImageView
+            android:id="@+id/dot_two"
+            android:layout_width="@dimen/mistake_dot"
+            android:layout_height="@dimen/mistake_dot"
+            android:layout_marginEnd="@dimen/space_xxs"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_dot_empty" />
+
+        <ImageView
+            android:id="@+id/dot_three"
+            android:layout_width="@dimen/mistake_dot"
+            android:layout_height="@dimen/mistake_dot"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_dot_empty" />
+    </LinearLayout>
+</merge>

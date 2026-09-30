@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CASINO_GOLD preset, royal-navy variant (design doc CrownFruitsDrop.md). -->
+    <color name="bg_deep">#0E1627</color>
+    <color name="bg_base">#18233B</color>
+    <color name="bg_raised">#22304E</color>
+    <color name="surface_card">#2A3A5C</color>
+    <color name="surface_card_alpha">#EB2A3A5C</color>
+    <color name="surface_translucent">#332A3A5C</color>
+    <color name="surface_stroke">#61F3C64C</color>
+
+    <color name="gold">#F3C64C</color>
+    <color name="gold_deep">#C99B23</color>
+    <color name="gold_hairline">#66FFF1D7</color>
+    <color name="gold_soft">#40F3C64C</color>
+
+    <color name="red">#E84C5C</color>
+    <color name="green">#54C37B</color>
+    <color name="blue">#55AEE2</color>
+    <color name="blue_soft">#3355AEE2</color>
+
+    <color name="cream">#FFF1D7</color>
+    <color name="cream_dim">#B9AE96</color>
+
+    <color name="scrim_light">#66101827</color>
+    <color name="scrim_mid">#CC101827</color>
+    <color name="scrim_deep">#E6101827</color>
+    <color name="scrim_result">#D9101827</color>
+
+    <color name="ripple_cream">#33FFF1D7</color>
+    <color name="transparent">#00000000</color>
+</resources>

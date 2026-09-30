@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Typography: 6 distinct levels -->
+    <style name="TextAppearance.App.Display" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/cream</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/cream_dim</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Score" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/gold</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.10</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/cream_dim</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <style name="TextAppearance.App.ButtonSmall" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:layout_height">@dimen/btn_primary_height</item>
+        <item name="android:minHeight">@dimen/btn_primary_height</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="android:textColor">@color/bg_base</item>
+        <item name="backgroundTint">@color/gold</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="strokeColor">@color/gold_hairline</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="rippleColor">@color/ripple_cream</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">@dimen/btn_secondary_height</item>
+        <item name="android:minHeight">@dimen/btn_secondary_height</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.ButtonSmall</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="backgroundTint">@color/surface_translucent</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="strokeColor">@color/blue</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="rippleColor">@color/ripple_cream</item>
+        <item name="iconTint">@color/blue</item>
+        <item name="iconSize">@dimen/icon_button</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.App.Button.Lane" parent="Widget.App.Button.Secondary">
+        <item name="android:layout_width">@dimen/lane_btn_width</item>
+        <item name="android:layout_height">@dimen/lane_btn_height</item>
+        <item name="android:minHeight">@dimen/lane_btn_height</item>
+        <item name="android:minWidth">@dimen/lane_btn_width</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/space_xs</item>
+        <item name="android:paddingEnd">@dimen/space_xs</item>
+        <item name="strokeColor">@color/gold</item>
+        <item name="iconTint">@color/gold</item>
+        <item name="iconGravity">top</item>
+        <item name="iconPadding">2dp</item>
+        <item name="backgroundTint">@color/bg_raised</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+    <!-- Surfaces -->
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/surface_card_alpha</item>
+        <item name="strokeColor">@color/surface_stroke</item>
+        <item name="strokeWidth">@dimen/card_stroke</item>
+    </style>
+
+    <style name="Widget.App.Progress" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/gold</item>
+        <item name="trackColor">@color/surface_translucent</item>
+        <item name="trackCornerRadius">2dp</item>
+        <item name="trackThickness">@dimen/progress_height</item>
+    </style>
+</resources>

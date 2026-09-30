@@ -1,0 +1,79 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D golden crown resting on a woven fruit basket, centered hero object, deep navy radial gradient background, crisp studio lighting, no text, no scene"
+    },
+    {
+      "name": "bg_loader",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game loader background, dark royal palace kitchen at night, deep navy marble and dim brass, a few warm candle highlights, cinematic and very dark, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game menu background, grand royal palace kitchen, navy marble walls with polished brass trim, warm golden light, rich and vibrant 3D render, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, soft blurred royal palace kitchen in deep navy and muted gold, low contrast for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "sprite_basket_gold",
+      "type": "sprite",
+      "prompt": "One single gilded woven golden basket, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_apple_gold",
+      "type": "sprite",
+      "prompt": "One single golden apple fruit, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_pear_honey",
+      "type": "sprite",
+      "prompt": "One single honey amber pear, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_berry_crown",
+      "type": "sprite",
+      "prompt": "One single large purple crown berry, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_plum_red",
+      "type": "sprite",
+      "prompt": "One single bright red plum, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_grape_mint",
+      "type": "sprite",
+      "prompt": "One single bunch of mint green grapes, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_fig_green",
+      "type": "sprite",
+      "prompt": "One single green fig fruit, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_plum_blue",
+      "type": "sprite",
+      "prompt": "One single deep blue plum, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_pepper_royal",
+      "type": "sprite",
+      "prompt": "One single dark red chili pepper, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_dish_tart",
+      "type": "sprite",
+      "prompt": "One single golden fruit tart on a small plate, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "button_cta",
+      "type": "button",
+      "prompt": "Horizontal game CTA button background plate, polished brass and gold gradient, glossy, rounded corners, subtle bevel, no text"
+    }
+  ]
+}

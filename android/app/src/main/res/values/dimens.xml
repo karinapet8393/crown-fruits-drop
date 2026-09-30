@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xxs">4dp</dimen>
+    <dimen name="space_xs">8dp</dimen>
+    <dimen name="space_sm">12dp</dimen>
+    <dimen name="space_md">16dp</dimen>
+    <dimen name="space_lg">24dp</dimen>
+    <dimen name="space_xl">32dp</dimen>
+
+    <dimen name="status_bar_pad">44dp</dimen>
+    <dimen name="header_min_height">72dp</dimen>
+    <dimen name="controls_height">196dp</dimen>
+
+    <dimen name="board_max_width">380dp</dimen>
+    <dimen name="board_side_margin">16dp</dimen>
+    <dimen name="board_pad">10dp</dimen>
+    <dimen name="board_border">2dp</dimen>
+    <dimen name="lane_gap">8dp</dimen>
+
+    <dimen name="btn_primary_height">60dp</dimen>
+    <dimen name="btn_secondary_height">50dp</dimen>
+    <dimen name="btn_radius">16dp</dimen>
+    <dimen name="lane_btn_width">88dp</dimen>
+    <dimen name="lane_btn_height">68dp</dimen>
+    <dimen name="icon_button">24dp</dimen>
+
+    <dimen name="sprite_fruit">56dp</dimen>
+    <dimen name="sprite_basket">96dp</dimen>
+    <dimen name="sprite_basket_menu">132dp</dimen>
+    <dimen name="sprite_dish">64dp</dimen>
+    <dimen name="sprite_recipe_fruit">44dp</dimen>
+    <dimen name="sprite_step">52dp</dimen>
+
+    <dimen name="crown_big">96dp</dimen>
+    <dimen name="divider_width">140dp</dimen>
+    <dimen name="divider_height">18dp</dimen>
+    <dimen name="progress_width">180dp</dimen>
+    <dimen name="progress_height">4dp</dimen>
+
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_stroke">2dp</dimen>
+    <dimen name="sheet_radius">28dp</dimen>
+
+    <dimen name="stat_dot">8dp</dimen>
+    <dimen name="stat_card_height">78dp</dimen>
+    <dimen name="mistake_dot">16dp</dimen>
+    <dimen name="cta_plate_height">72dp</dimen>
+    <dimen name="touch_min">48dp</dimen>
+</resources>

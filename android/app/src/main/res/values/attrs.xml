@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatCardView">
+        <attr name="statValue" format="string" />
+        <attr name="statLabel" format="string" />
+        <attr name="statAccent" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StepCardView">
+        <attr name="stepNumber" format="string" />
+        <attr name="stepTitle" format="string" />
+        <attr name="stepBody" format="string" />
+        <attr name="stepAccent" format="color" />
+    </declare-styleable>
+</resources>

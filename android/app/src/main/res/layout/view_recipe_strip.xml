@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.App.Card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_sm">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/strip_fruit_a"
+                    android:layout_width="@dimen/sprite_recipe_fruit"
+                    android:layout_height="@dimen/sprite_recipe_fruit"
+                    android:contentDescription="@string/desc_fruit_generic"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/strip_count_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_xs"
+                    android:textAppearance="@style/TextAppearance.App.Title" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/strip_fruit_b"
+                    android:layout_width="@dimen/sprite_recipe_fruit"
+                    android:layout_height="@dimen/sprite_recipe_fruit"
+                    android:contentDescription="@string/desc_fruit_generic"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/strip_count_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_xs"
+                    android:textAppearance="@style/TextAppearance.App.Title" />
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/strip_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:indeterminate="false"
+                app:trackCornerRadius="2dp"
+                app:trackThickness="@dimen/progress_height"
+                app:indicatorColor="@color/gold"
+                app:trackColor="@color/surface_translucent" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</merge>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <ImageView
+        android:id="@+id/game_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/game_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_scrim_mid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/game_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/header_min_height"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_sm"
+        android:paddingTop="@dimen/status_bar_pad"
+        android:paddingEnd="@dimen/space_sm"
+        android:paddingBottom="@dimen/space_xs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_menu"
+            style="@style/Widget.App.Button.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_secondary_height"
+            android:minWidth="88dp"
+            android:text="@string/cta_menu" />
+
+        <TextView
+            android:id="@+id/game_recipe_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_xs"
+            android:layout_marginEnd="@dimen/space_xs"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.App.Title" />
+
+        <TextView
+            android:id="@+id/game_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="end"
+            android:minWidth="76dp"
+            android:textAppearance="@style/TextAppearance.App.Score"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_strip_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/board_side_margin"
+        android:layout_marginTop="@dimen/space_xs"
+        android:layout_marginEnd="@dimen/board_side_margin"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_header"
+        app:layout_constraintWidth_max="@dimen/board_max_width">
+
+        <com.WqNzVmK.rJpLtF.core.ui.RecipeStripView
+            android:id="@+id/game_recipe_strip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.WqNzVmK.rJpLtF.core.ui.MistakeDotsView
+            android:id="@+id/game_mistakes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_xs" />
+    </LinearLayout>
+
+    <com.WqNzVmK.rJpLtF.core.ui.LaneBoardView
+        android:id="@+id/game_board"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/board_side_margin"
+        android:layout_marginTop="@dimen/space_xs"
+        android:layout_marginEnd="@dimen/board_side_margin"
+        android:layout_marginBottom="@dimen/space_xs"
+        android:background="@drawable/deco_board_frame"
+        android:contentDescription="@string/desc_board"
+        app:layout_constraintBottom_toTopOf="@id/game_controls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_strip_row"
+        app:layout_constraintWidth_max="@dimen/board_max_width" />
+
+    <TextView
+        android:id="@+id/game_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_banner"
+        android:elevation="8dp"
+        android:paddingStart="@dimen/space_lg"
+        android:paddingTop="@dimen/space_sm"
+        android:paddingEnd="@dimen/space_lg"
+        android:paddingBottom="@dimen/space_sm"
+        android:text="@string/game_banner_complete"
+        android:textAppearance="@style/TextAppearance.App.Headline"
+        android:textColor="@color/bg_deep"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/game_board"
+        app:layout_constraintEnd_toEndOf="@id/game_board"
+        app:layout_constraintStart_toStartOf="@id/game_board"
+        app:layout_constraintTop_toTopOf="@id/game_board" />
+
+    <LinearLayout
+        android:id="@+id/game_controls"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/controls_height"
+        android:background="@drawable/bg_controls"
+        android:elevation="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_md"
+        android:paddingTop="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md"
+        android:paddingBottom="@dimen/space_md"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_lane_left"
+                style="@style/Widget.App.Button.Lane"
+                android:layout_width="@dimen/lane_btn_width"
+                android:layout_height="@dimen/lane_btn_height"
+                android:layout_marginEnd="@dimen/space_sm"
+                android:contentDescription="@string/desc_lane_left"
+                android:text="@string/cta_lane_left"
+                app:icon="@drawable/ic_lane_left" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_lane_center"
+                style="@style/Widget.App.Button.Lane"
+                android:layout_width="@dimen/lane_btn_width"
+                android:layout_height="@dimen/lane_btn_height"
+                android:contentDescription="@string/desc_lane_center"
+                android:text="@string/cta_lane_center"
+                app:icon="@drawable/ic_lane_mid" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_lane_right"
+                style="@style/Widget.App.Button.Lane"
+                android:layout_width="@dimen/lane_btn_width"
+                android:layout_height="@dimen/lane_btn_height"
+                android:layout_marginStart="@dimen/space_sm"
+                android:contentDescription="@string/desc_lane_right"
+                android:text="@string/cta_lane_right"
+                app:icon="@drawable/ic_lane_right" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/game_controls_divider"
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="@dimen/space_xs"
+            android:importantForAccessibility="no"
+            android:src="@drawable/deco_crown_divider" />
+
+        <TextView
+            android:id="@+id/game_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.App.Label" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

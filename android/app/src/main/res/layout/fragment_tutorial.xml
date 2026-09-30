@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <ImageView
+        android:id="@+id/tutorial_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tutorial_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_scrim_mid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tutorial_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/header_min_height"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_sm"
+        android:paddingTop="@dimen/status_bar_pad"
+        android:paddingEnd="@dimen/space_sm"
+        android:paddingBottom="@dimen/space_xs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tutorial_back"
+            style="@style/Widget.App.Button.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_secondary_height"
+            android:minWidth="88dp"
+            android:text="@string/cta_menu" />
+
+        <TextView
+            android:id="@+id/tutorial_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_xs"
+            android:layout_marginEnd="88dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tutorial_title"
+            android:textAppearance="@style/TextAppearance.App.Headline"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/tutorial_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_marginTop="@dimen/space_sm"
+        android:layout_marginEnd="@dimen/space_md"
+        android:layout_marginBottom="@dimen/space_sm"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/tutorial_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutorial_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.WqNzVmK.rJpLtF.core.ui.StepCardView
+                android:id="@+id/tutorial_step_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:stepAccent="@color/blue"
+                app:stepBody="@string/tutorial_body_one"
+                app:stepNumber="@string/tutorial_step_one"
+                app:stepTitle="@string/tutorial_title_one" />
+
+            <com.WqNzVmK.rJpLtF.core.ui.StepCardView
+                android:id="@+id/tutorial_step_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                app:stepAccent="@color/green"
+                app:stepBody="@string/tutorial_body_two"
+                app:stepNumber="@string/tutorial_step_two"
+                app:stepTitle="@string/tutorial_title_two" />
+
+            <com.WqNzVmK.rJpLtF.core.ui.StepCardView
+                android:id="@+id/tutorial_step_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                app:stepAccent="@color/red"
+                app:stepBody="@string/tutorial_body_three"
+                app:stepNumber="@string/tutorial_step_three"
+                app:stepTitle="@string/tutorial_title_three" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tutorial_menu"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_secondary_height"
+        android:layout_marginStart="@dimen/space_lg"
+        android:layout_marginEnd="@dimen/space_lg"
+        android:layout_marginBottom="@dimen/space_lg"
+        android:text="@string/cta_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

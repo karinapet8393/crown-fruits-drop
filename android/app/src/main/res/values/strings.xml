@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crown Fruits Drop</string>
+
+    <!-- Splash -->
+    <string name="splash_title">CROWN FRUITS DROP</string>
+    <string name="splash_brand">ROYAL FRUITS</string>
+    <string name="splash_loading">LOADING THE ROYAL KITCHEN</string>
+    <string name="splash_progress_desc">Preparing the royal kitchen</string>
+
+    <!-- Menu -->
+    <string name="menu_title">CROWN FRUITS DROP</string>
+    <string name="menu_hint">Serve four royal recipes before the kitchen bell</string>
+    <string name="cta_play">PLAY</string>
+    <string name="cta_recipes">RECIPES</string>
+    <string name="cta_how_to">HOW TO PLAY</string>
+    <string name="stat_best_label">BEST</string>
+    <string name="stat_accuracy_label">ACCURACY</string>
+    <string name="stat_recipes_label">RECIPES</string>
+    <string name="desc_menu_basket">Golden royal basket</string>
+
+    <!-- Recipes -->
+    <string name="recipes_title">ROYAL RECIPES</string>
+    <string name="recipes_hint">Every recipe asks for two royal fruits</string>
+    <string name="badge_done">DONE</string>
+    <string name="badge_next">NEXT</string>
+    <string name="badge_locked">LOCKED</string>
+    <string name="state_done">Completed</string>
+    <string name="state_next">Up next</string>
+    <string name="state_locked">Locked</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title">HOW TO PLAY</string>
+    <string name="tutorial_step_one">1</string>
+    <string name="tutorial_step_two">2</string>
+    <string name="tutorial_step_three">3</string>
+    <string name="tutorial_title_one">MOVE THE BASKET</string>
+    <string name="tutorial_body_one">Tap LEFT, CENTER or RIGHT to slide the golden basket between the three kitchen chutes.</string>
+    <string name="tutorial_title_two">CATCH THE RECIPE</string>
+    <string name="tutorial_body_two">Only the two fruits printed on the recipe card count. Each good catch fills the gold bar.</string>
+    <string name="tutorial_title_three">LET THE REST FALL</string>
+    <string name="tutorial_body_three">Three wrong items end the feast. Penalty items never drop into the lane you already hold.</string>
+    <string name="desc_step_good">Recipe fruit, safe to catch</string>
+    <string name="desc_step_bad">Royal pepper, never catch it</string>
+    <string name="desc_step_lanes">Three kitchen chutes</string>
+
+    <!-- Game -->
+    <string name="cta_menu">MENU</string>
+    <string name="cta_lane_left">LEFT</string>
+    <string name="cta_lane_center">CENTER</string>
+    <string name="cta_lane_right">RIGHT</string>
+    <string name="game_recipe_header">RECIPE %1$d/%2$d · %3$s</string>
+    <string name="game_timer">TIME %1$d</string>
+    <string name="game_status">RECIPE %1$d OF %2$d · SERVED %3$d</string>
+    <string name="game_banner_complete">RECIPE COMPLETE</string>
+    <string name="game_counter">%1$d/%2$d</string>
+    <string name="desc_board">Three kitchen chutes with falling fruits</string>
+    <string name="desc_mistakes">Mistakes %1$d of %2$d</string>
+    <string name="desc_lane_left">Move basket to the left chute</string>
+    <string name="desc_lane_center">Move basket to the center chute</string>
+    <string name="desc_lane_right">Move basket to the right chute</string>
+
+    <!-- Result -->
+    <string name="result_win">FEAST COMPLETE!</string>
+    <string name="result_lose">ORDER RETURNED!</string>
+    <string name="result_next">NEXT: %1$s</string>
+    <string name="result_next_none">THE ROYAL TABLE IS FULLY SERVED</string>
+    <string name="cta_play_again">PLAY AGAIN</string>
+    <string name="desc_dish_served">Served royal dish</string>
+    <string name="desc_dish_pending">Dish not served yet</string>
+
+    <!-- Shared / accessibility -->
+    <string name="desc_crown">Royal crown emblem</string>
+    <string name="desc_cta_plate">Brass button plate</string>
+    <string name="desc_fruit_generic">Recipe fruit</string>
+    <string name="value_fraction">%1$d/%2$d</string>
+    <string name="value_percent">%1$d%%</string>
+    <string name="value_plain">%1$d</string>
+
+    <!-- Fruit names -->
+    <string name="fruit_golden_apple">GOLDEN APPLE</string>
+    <string name="fruit_honey_pear">HONEY PEAR</string>
+    <string name="fruit_crown_berry">CROWN BERRY</string>
+    <string name="fruit_red_plum">RED PLUM</string>
+    <string name="fruit_mint_grape">MINT GRAPE</string>
+    <string name="fruit_green_fig">GREEN FIG</string>
+    <string name="fruit_blue_plum">BLUE PLUM</string>
+    <string name="fruit_royal_pepper">ROYAL PEPPER</string>
+
+    <!-- Recipe names -->
+    <string name="recipe_golden_tart">GOLDEN TART</string>
+    <string name="recipe_berry_pie">ROYAL BERRY PIE</string>
+    <string name="recipe_emerald_sorbet">EMERALD SORBET</string>
+    <string name="recipe_coronation_punch">CORONATION PUNCH</string>
+</resources>

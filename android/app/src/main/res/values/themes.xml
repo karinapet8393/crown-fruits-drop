@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Single Material 3 theme. Palette: CASINO_GOLD (royal navy + gold).
+         The window is NOT fullscreen: status bar and navigation bar stay visible. -->
+    <style name="Theme.App" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/gold</item>
+        <item name="colorOnPrimary">@color/bg_base</item>
+        <item name="colorPrimaryContainer">@color/gold_deep</item>
+        <item name="colorOnPrimaryContainer">@color/bg_deep</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorOnSecondary">@color/bg_deep</item>
+        <item name="colorTertiary">@color/green</item>
+        <item name="colorOnTertiary">@color/bg_deep</item>
+        <item name="colorError">@color/red</item>
+        <item name="colorOnError">@color/bg_deep</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/cream</item>
+        <item name="colorSurfaceVariant">@color/bg_raised</item>
+        <item name="colorOnSurfaceVariant">@color/cream_dim</item>
+        <item name="colorOutline">@color/surface_stroke</item>
+        <item name="android:colorBackground">@color/bg_base</item>
+        <item name="android:windowBackground">@color/bg_deep</item>
+        <item name="android:statusBarColor">@color/bg_deep</item>
+        <item name="android:navigationBarColor">@color/bg_deep</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/cream</item>
+        <item name="android:textColorSecondary">@color/cream_dim</item>
+    </style>
+</resources>
